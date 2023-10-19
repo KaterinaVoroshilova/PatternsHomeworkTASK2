@@ -55,7 +55,7 @@ class AuthTest {
         $("[data-test-id='action-login']").click();
         $("[data-test-id ='error-notification'] .notification__content")
                 .shouldBe(Condition.visible, Duration.ofSeconds(4))
-                .shouldHave(exactText("Ошибка! Неверно указан логин или пароль"));
+                .shouldHave(exactText("Ошибка! Пользователь заблокирован"));
     }
 
     @Test
