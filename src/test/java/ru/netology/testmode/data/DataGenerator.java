@@ -37,13 +37,11 @@ public class DataGenerator {
 
 
     public static String getRandomLogin() {
-        String login = String.valueOf(faker.random());
-        return login;
+        return faker.name().firstName();
     }
 
     public static String getRandomPassword() {
-        String password = String.valueOf(faker.random());
-        return password;
+        return faker.name().lastName();
     }
 
     public static class Registration {

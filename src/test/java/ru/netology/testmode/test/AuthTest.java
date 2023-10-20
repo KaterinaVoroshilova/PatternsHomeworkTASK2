@@ -10,10 +10,9 @@ import java.time.Duration;
 import static com.codeborne.selenide.Condition.exactText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
+import static ru.netology.testmode.data.DataGenerator.*;
 import static ru.netology.testmode.data.DataGenerator.Registration.getRegisteredUser;
 import static ru.netology.testmode.data.DataGenerator.Registration.getUser;
-import static ru.netology.testmode.data.DataGenerator.getRandomLogin;
-import static ru.netology.testmode.data.DataGenerator.getRandomPassword;
 
 class AuthTest {
 
